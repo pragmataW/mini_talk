@@ -6,7 +6,7 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:28:51 by yciftci           #+#    #+#             */
-/*   Updated: 2022/12/13 12:47:02 by yciftci          ###   ########.fr       */
+/*   Updated: 2022/12/13 16:01:05 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,15 @@ int	main(int argc, char *argv[])
 	int	pid;
 
 	if (argc < 3)
+	{
 		ft_putstr_fd(LOWARGERR, 1);
+		return (0);
+	}
 	if (argc > 3)
+	{
 		ft_putstr_fd(TOOARGERR, 1);
+		return (0);
+	}
 	pid = atoi(argv[1]);
 	get_char(pid, argv[2]);
 	return (0);
