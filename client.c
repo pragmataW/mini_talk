@@ -6,7 +6,7 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:28:51 by yciftci           #+#    #+#             */
-/*   Updated: 2022/12/13 16:36:06 by yciftci          ###   ########.fr       */
+/*   Updated: 2022/12/13 17:52:30 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	main(int argc, char *argv[])
 		ft_putstr_fd(TOOARGERR, 1);
 		return (0);
 	}
-	pid = atoi(argv[1]);
+	pid = ft_atoi(argv[1]);
 	get_char(pid, argv[2]);
 	return (0);
 }
