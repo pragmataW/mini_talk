@@ -6,7 +6,7 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:28:51 by yciftci           #+#    #+#             */
-/*   Updated: 2022/12/13 01:05:54 by yciftci          ###   ########.fr       */
+/*   Updated: 2022/12/13 12:47:02 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	get_bit(int pid, char c)
 		else
 			kill(pid, SIGUSR2);
 		usleep(150);
+		n--;
 	}
 }
 
@@ -52,6 +53,6 @@ int	main(int argc, char *argv[])
 	if (argc > 3)
 		ft_putstr_fd(TOOARGERR, 1);
 	pid = atoi(argv[1]);
-	get_char(pid, argv[2])
+	get_char(pid, argv[2]);
 	return (0);
 }
