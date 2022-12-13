@@ -6,13 +6,13 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:29:00 by yciftci           #+#    #+#             */
-/*   Updated: 2022/12/13 15:45:34 by yciftci          ###   ########.fr       */
+/*   Updated: 2022/12/13 16:36:18 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mini_talk.h"
 
-void	put_bin(char *str)
+static void	put_bin(char *str)
 {
 	int		base;
 	char	res;
@@ -35,7 +35,7 @@ void	put_bin(char *str)
 	ft_putchar_fd(res, 1);
 }
 
-void	sighandler(int signal)
+static void	sighandler(int signal)
 {
 	static int	byte;
 	static char	*binary;

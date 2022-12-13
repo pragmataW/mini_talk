@@ -6,13 +6,13 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:28:51 by yciftci           #+#    #+#             */
-/*   Updated: 2022/12/13 16:01:05 by yciftci          ###   ########.fr       */
+/*   Updated: 2022/12/13 16:36:06 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mini_talk.h"
 
-void	get_bit(int pid, char c)
+static void	get_bit(int pid, char c)
 {
 	int	bit;
 	int	n;
@@ -32,7 +32,7 @@ void	get_bit(int pid, char c)
 	}
 }
 
-void	get_char(int pid, char *str)
+static void	get_char(int pid, char *str)
 {
 	int	i;
 
