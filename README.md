@@ -39,7 +39,8 @@ Gönderilen sinyalleri signal fonksiyonu ile tutup bir diziye atasın, gelen sin
 
 Taban aritmatiği nasıl olacak ?
 
-1        0        1         1          0        1          0          0 
+1        0        1         1          0        1          0          0
+
 2^7      2^6      2^5       2^4        2^3      2^2       2^1        2^0
 
 bitin altındaki sayı * bit + diğer bitler yani soldan sağa için:
