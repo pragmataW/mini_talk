@@ -65,11 +65,9 @@ int	main(int argc, char *argv[])
 	pid = getpid();
 	ft_putnbr_fd(pid, 1);
 	write(1, "\n", 1);
+	signal(SIGUSR1, sighandler);
+	signal(SIGUSR2, sighandler);
 	while (1)
-	{
-		signal(SIGUSR1, sighandler);
-		signal(SIGUSR2, sighandler);
 		pause();
-	}
 	return (0);
 }
